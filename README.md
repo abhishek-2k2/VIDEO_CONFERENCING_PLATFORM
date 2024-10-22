@@ -8,52 +8,58 @@
 <body>
 
 <h1>Video Conferencing Application</h1>
-<p>This project is a real-time video conferencing application that allows users to engage in video meetings with integrated chat functionality. Built using the GetStream platform, it provides seamless video and audio communication with additional features like chat, multi-user conferencing, and screen sharing.</p>
+<p>This project is a real-time video conferencing application that allows users to create, join, and manage video calls seamlessly. The application is designed to provide a smooth user experience with features that enhance communication and collaboration among participants.</p>
 
 <h2>Features</h2>
 <ul>
-    <li><strong>Real-Time Video & Audio Communication:</strong> Seamless video and audio streaming between participants using GetStream for real-time communication.</li>
-    <li><strong>Chat Functionality:</strong> Integrated chat feature using the GetStream API to enable text messaging between participants during the conference.</li>
-    <li><strong>Screen Sharing:</strong> Participants can share their screen for presentations and collaboration during a call.</li>
-    <li><strong>Multi-User Conference:</strong> Supports multiple participants in a single video call, ideal for team meetings or group discussions.</li>
-    <li><strong>Responsive Design:</strong> The application is fully responsive, ensuring a smooth user experience on both desktop and mobile devices.</li>
+    <li><strong>Real-Time Video and Audio:</strong> Supports high-quality video and audio communication for participants during conferences.</li>
+    <li><strong>Chat Functionality:</strong> Users can send text messages to each other during the video call, facilitating real-time communication.</li>
+    <li><strong>Screen Sharing:</strong> Allows users to share their screens with other participants, making presentations and collaborations easier.</li>
+    <li><strong>Responsive Design:</strong> The application is fully responsive, ensuring that users have an optimized experience across various devices.</li>
+    <li><strong>User Authentication:</strong> Secure login and user management features to ensure that only authorized users can join the conferences.</li>
 </ul>
 
 <h2>Project Components</h2>
 
-<h3>GetStream for Communication</h3>
-<p>The application leverages the <strong>GetStream</strong> API for real-time communication, including video streaming and chat functionality. GetStream’s scalable infrastructure ensures low-latency connections, making the video calls smooth and responsive.</p>
+<h3>User Interface</h3>
+<p>The user interface is designed to be intuitive and user-friendly, enabling participants to navigate through the video conferencing features with ease.</p>
 
-
-
-<h3>Chat Feature</h3>
-<p>The chat feature is implemented using GetStream’s messaging API, allowing participants to send real-time messages during the video conference. This enhances collaboration and ensures seamless communication between users.</p>
+<h3>Real-Time Communication</h3>
+<p>The backend handles real-time communication using the GetStream service, allowing users to connect and communicate without delays.</p>
 
 <h3>Screen Sharing</h3>
-<p>The application supports screen sharing through WebRTC’s <code>getDisplayMedia()</code> API, enabling participants to share their screen for presentations or other collaborative tasks.</p>
+<p>Implemented screen sharing functionality using modern web technologies to facilitate collaboration during meetings.</p>
 
-<h3>Multi-User Support</h3>
-<p>The app allows multiple users to join a single conference room, making it ideal for team meetings, group collaborations, or virtual events. The interface dynamically adjusts to manage multiple video streams effectively.</p>
-
-<h3>Responsive Design</h3>
+<h3>Security Features</h3>
 <ul>
-    <li>The user interface is designed to be responsive, offering a seamless experience across devices, including desktop, tablet, and mobile.</li>
-    <li>All controls, such as muting audio, toggling video, and starting/stopping screen sharing, are easily accessible from the interface.</li>
+    <li><strong>Authentication:</strong> The application uses Clerk for user authentication, ensuring secure access to the conferencing features.</li>
+    <li><strong>Data Encryption:</strong> All communication data is encrypted to protect user privacy and maintain confidentiality during calls.</li>
+</ul>
+
+<h2>Tech Stack</h2>
+<p>This project utilizes the following technologies:</p>
+<ul>
+    <li><strong>Next.js:</strong> React-based framework for server-side rendering and static site generation.</li>
+    <li><strong>TypeScript:</strong> Superset of JavaScript that adds static types for better developer experience.</li>
+    <li><strong>Clerk:</strong> User authentication service providing secure user management and login features.</li>
+    <li><strong>GetStream:</strong> Service used for real-time video and audio communication.</li>
+    <li><strong>ShadCN:</strong> UI components styled with Tailwind CSS for consistent and accessible design.</li>
+    <li><strong>Tailwind CSS:</strong> Utility-first CSS framework for creating responsive and scalable designs.</li>
 </ul>
 
 <h2>Error Handling</h2>
 <ul>
-    <li><strong>Connection Issues:</strong> The application detects network connectivity problems and automatically tries to reconnect users in case of disconnection.</li>
-    <li><strong>Media Access Errors:</strong> If a user denies access to their camera or microphone, the app provides clear instructions on enabling access.</li>
-    <li><strong>Screen Sharing Errors:</strong> Any issues during screen sharing are handled gracefully, with user-friendly messages guiding participants to resolve them.</li>
+    <li><strong>Connection Issues:</strong> The application handles connection errors gracefully, providing users with appropriate error messages and options to retry.</li>
+    <li><strong>Authentication Errors:</strong> Unauthorized attempts to access video calls are blocked, and users receive messages to guide them through the login process.</li>
+    <li><strong>Input Validation:</strong> Ensures that user inputs are validated to prevent errors and improve the overall user experience.</li>
 </ul>
 
 <h2>Live Demo</h2>
-<p>You can try out the live demo of the project here:</p>
+<p>Try out the live demo of the project here:</p>
 <p><a href="https://video-conferencing-pied.vercel.app/" target="_blank">Live Demo</a></p>
 
 <h2>Conclusion</h2>
-<p>This Video Conferencing Application offers a complete solution for virtual meetings, combining real-time video and audio with text chat and screen sharing. Built using GetStream and WebRTC, it ensures a reliable and high-quality communication experience for users across devices.</p>
+<p>The Video Conferencing Application provides a reliable and feature-rich platform for real-time communication. By leveraging modern web technologies and focusing on user experience, this application enables users to connect and collaborate effectively, regardless of their location.</p>
 
 </body>
 </html>
